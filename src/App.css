@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f9f8f5;
+  background-image:  radial-gradient(#000000 1.1px, transparent 1.1px), radial-gradient(#000000 1.1px, #f9f8f5 1.1px);
+  background-size: 44px 44px;
+  background-position: 0 0,22px 22px;
+  color: #333333;
+  padding: 1rem;
+}
+
+/* Buttons */
+.selects{
+  width: 10rem;
+  height: 3rem;
+  padding: 1rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+  background-color: #ccc6b58f;
+}
+
+/* Lista de libros */
+.litsBooks{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(
+      auto-fit,
+      minmax(
+          220px,
+          1fr
+      )
+  );
+  gap: 6rem;
+}
+
+@media (max-width: 700px)
+{
+  .selects{
+    display: flex;
+  }
+}

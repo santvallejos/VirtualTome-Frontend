@@ -1,0 +1,32 @@
+/* Titulos */
+.containerTittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 2rem;
+}
+
+.tittle {
+    font-size: 6rem;
+}
+
+.subTittle{
+    width: 60%;
+}   
+
+@media (max-width: 700px)
+{
+    .tittle{
+        font-size: 3rem;
+    }
+
+    .subTittle{
+        font-size: 20px;
+    }
+}
